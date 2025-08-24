@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventana Modal</title>
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+</head>
+<body>
+	<h1>Ventana Modal</h1>
+	<button id="btn-modal">Abrir ventana modal</button>
+
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Contenido de la ventana modal</h2>
+			<p>Este es el contenido de la ventana modal.</p>
+		</div>
+	</div>
+
+	<script>
+		// Obtener el botón y la ventana modal
+		var btnModal = document.getElementById("btn-modal");
+		var modal = document.getElementById("modal");
+
+		// Obtener el botón cerrar
+		var closeBtn = document.getElementsByClassName("close")[0];
+
+		// Abrir la ventana modal cuando se hace clic en el botón
+		btnModal.onclick = function() {
+			modal.style.display = "block";
+		}
+
+		// Cerrar la ventana modal cuando se hace clic en el botón cerrar
+		closeBtn.onclick = function() {
+			modal.style.display = "none";
+		}
+
+		// Cerrar la ventana modal cuando se hace clic fuera del contenido
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>

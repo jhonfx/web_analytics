@@ -1,0 +1,376 @@
+* {
+	font-family: 'Circular','font-family';
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+	font-family: 'Circular';
+	src: url(../fonts/circular-std-medium-500.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/Inter-ExtraLight.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'InterLight';
+	src: url(../fonts/Inter-Light.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+a {
+	text-decoration: none;
+	color: #09f8c1;
+}
+
+body {
+	margin: 0 auto;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+@media screen and (max-width: 980px) {
+	body {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+p {
+	text-align: left;
+	font-family: 'InterLight';
+	line-height: 1.2;
+	letter-spacing: 2px;
+}
+
+header {
+	background-color: #06c8a1;
+	color: #fff;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #d0fff6;
+	font-size: 4.8em;
+	margin: 0px 0px 5px;
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 3.8em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.8em;
+  }
+}
+
+h1.subtitle {
+	text-align: center;
+	color: #5b5c5c;
+	font-size: 2.8em;
+	margin: 0px 0px 55px;
+}
+
+hr {
+	margin-bottom: 35px;
+}
+
+@media screen and (min-width: 601px) {
+  h1.subtitle {
+    font-size: 2.4em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1.subtitle {
+    font-size: 1.8em;
+  }
+}
+
+
+h2 {
+	text-align: center;
+	color: #161b2f;
+	margin: 0px 0px 20px;
+}
+
+h2.subtitle {
+	text-align: left;
+	color: #161b2f;
+	margin: 0px 0px 20px;
+	font-family: 'InterLight';
+}
+
+.foot_container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.column {
+	flex: 1;
+	padding: 0 10px;
+}
+
+.column h2 {
+	margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0.811);
+}
+
+footer {
+	background-color: #06c8a1;
+	color: #161b2f;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10%;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	margin-right: 20px;
+}
+
+footer a {
+	color: #161b2f;
+	text-decoration: none
+}
+
+/*/
+/* Estilos para la barra de título main page*/
+.title-bar {
+  height: 43px;
+  background-color: #161b2f;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 10px;
+	margin: 20px 20px 20px 20px;
+  box-sizing: border-box;
+	border-radius: 10px;
+  -webkit-app-region: drag; /* Para que la barra de título pueda arrastrarse */
+}
+
+.title-bar__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-bar__button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title-bar__button--red {
+  background-color: #d0fff6;
+}
+
+.title-bar__button--yellow {
+  background-color: #d0fff6;
+}
+
+.title-bar__button--green {
+  background-color: #d0fff6;
+}
+
+
+/*Contenedor dos con otro estilo responsibo*/
+
+.container2 {
+	border: 10px solid #161b2f;
+	margin: -30px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+.item2 {
+  width: 30%;
+  padding: 5px;
+  box-sizing: border-box;
+	background-color: #161b2f;
+	margin: 20px 10px 10px 10px;
+  text-align: center;
+	color: #09f8c8;
+}
+
+.item3 {
+  width: 100%;
+	height: 180px;
+  padding: 5px;
+  box-sizing: border-box;
+	background-color: transparent;
+	margin: 5px 10px 10px 10px;
+  text-align: center;
+	color: #09f8c8;
+}
+
+.btn2 {
+  background-color: #272f51;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+	width: 120px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+@media (max-width: 768px) {
+  .item2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .item2 {
+    width: 100%;
+  }
+}
+
+/*Styles for a content pages*/
+.window2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.title-bar2 {
+  
+  height: 32px;
+  background-color: #161b2f;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 10px;
+	margin: 20px 20px 0 20px;
+  box-sizing: border-box;
+  -webkit-app-region: drag; /* Para que la barra de título pueda arrastrarse */
+}
+
+.title-bar__buttons2 {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.title-bar__button2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title-bar__button--red2 {
+  background-color: #ff5f57;
+}
+
+.title-bar__button--yellow2 {
+  background-color: #ffbd2e;
+}
+
+.title-bar__button--green2 {
+  background-color: #28c940;
+}
+
+/* Estilos para el contenido */
+.content-mid {
+	margin-left: 20px;
+	margin-right: 20px;
+	height: calc(100% - 30px);
+	background-color: #f6f6f6;
+	overflow: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 0.8px solid;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/*
+	272f51
+	06c8a1
+	d0fff6
+	384373
+	161b2f
+	09f8c8
+	*/

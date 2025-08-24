@@ -1,0 +1,248 @@
+
+
+header .social-buttons img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.category-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category-buttons button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-buttons button:hover {
+    background-color: darkorange;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-list .product {
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-list .product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-list .product h3 {
+    color: orange;
+}
+
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 128, 255);
+    color: white;
+}
+
+.footer-social {
+    margin-right: 20px;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-text {
+    flex: 1;
+    text-align: left;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.product-item span {
+    display: block;
+    color: #25211d;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+
+.category-menu li a {
+    display: block;
+    padding: 10px 24px;
+    background: linear-gradient(180deg, #4f6fa3 0%, #7a8ca7 50%, #dbe6ee 100%);
+    color: #fff;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(80, 120, 180, 0.15), 0 1px 0 #fff inset;
+    border: 1px solid #b0c4de;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.category-menu li a:hover {
+    background: linear-gradient(180deg, #7a8ca7 0%, #4f6fa3 80%, #dbe6ee 100%);
+    color: #25211d;
+    box-shadow: 0 4px 16px rgba(80, 120, 180, 0.3), 0 2px 8px #fff inset;
+    transform: translateY(-2px) scale(1.05);
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(59, 64, 67);
+    padding: 16px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    min-height: 64px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 10;
+}
+
+.category-menu {
+    margin-left: auto;
+    width: auto;
+}
+
+.category-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.btn-mclaren {
+    display: inline-block;
+    background: #006f62;
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(255, 111, 0, 0.15);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    outline: none;
+    width: auto;
+    min-width: 120px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    word-break: break-word;
+}
+
+.btn-mclaren:hover,
+.btn-mclaren:focus {
+    background: #0f635a;
+    color: #fff !important;
+    text-decoration: underline;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(255, 111, 0, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    header {
+        padding: 12px 3%;
+    }
+    .category-menu ul {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 2%;
+        min-height: unset;
+    }
+    .category-menu {
+        width: 100%;
+        margin-left: 0;
+    }
+    .category-menu ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+        margin: 8px 0;
+        width: 100%;
+    }
+    .btn-mclaren {
+        width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+        font-size: 0.98rem;
+        padding: 12px 8px;
+    }
+}
+
+/* ...rest of your CSS remains

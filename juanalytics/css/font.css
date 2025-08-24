@@ -1,0 +1,54 @@
+* {
+	font-family: 'Circular','font-family';
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+	font-family: 'Circular';
+	src: url(../fonts/circular-std-medium-500.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url(../fonts/Inter-ExtraLight.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'InterLight';
+	src: url(../fonts/Inter-Light.ttf);
+	font-style: light;
+	font-weight: 200;
+}
+
+p {
+  font-family: 'Inter';
+}
+
+p#main-title {
+  font-family: 'Circular';
+}
+
+p#second-title {
+  font-family: 'Circular';
+}
+
+@media screen and (min-width: 769px), print {
+  .hero-body {
+      padding: 0rem 0rem !important;
+  }
+}
+
+.spacer{
+  padding-top: 5%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juanlytics.net Measurement Web Analytics | Meaurement buttons</title>
+  <meta name="description" content="Measurement buttons test">
+  <meta charset="UTF-8">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="measurement web analytics"/>
+  <meta property="og:description" content="descripción del contenido de la página" />
+  <meta property="og:image" content="https://juanalytics.net/images/web_analytics_juanalytics.png" />
+  <meta property="og:url" content=”permalink” />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script>
+    window.onload = function(){
+        // Seleccionar el elemento contenedor de los botones
+      const contenedor = document.getElementById("container2");
+
+      // Crear los 20 botones y agregarlos al contenedor
+      for(let i = 1; i <= 20; i++) {
+        const div = document.createElement("div");
+        const boton = document.createElement("button");
+        div.className += "item";
+        div.innerText = `Artículo ${i}` + `\n\n`;
+        contenedor.appendChild(div);
+        boton.innerText = `Botón ${i}`;
+        boton.setAttribute('data-id',`${i}`)
+        div.appendChild(boton)
+      };
+    }
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WP6R9HX');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP6R9HX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Bienvenido a mi sitio web</h1>
+      <div class="container2">
+        <div class="item">
+          Artículo 1<br>
+          <button id="btnItem" data-id="{id}" data-value="{value}" data-category="{category}">Ver más</button>
+        </div>
+      </div>
+      <div id="container2" class="container2">
+      </div>
+	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

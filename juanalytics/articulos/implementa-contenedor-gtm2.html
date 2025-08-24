@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Implementa un contenedor GTM en un sitio web | Juanalytics</title>
+    <meta name="description" content="aprende como implementar un contendor de etiquetas de google tag manager para la medición de tu sitio web">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Juanalytics | measurement web analytics"/>
+    <meta property="og:description" content="aprende como implementar un contendor de etiquetas de google tag manager para la medición de tu sitio web" />
+    <meta property="og:image" content="https://juanalytics.net/images/web_analytics_juanalytics.png" />
+    <meta property="og:url" content=”permalink” />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WP6R9HX-');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP6R9HX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p id="main-title" class="title is-1">
+          &#60;juanalytics&#47;&#62;
+        </p>
+        <p id="second-title" class="subtitle is-4">
+          digital measurement analytics
+        </p>
+      </div>
+    </section>
+  <section class="section">
+    <div class="container">
+      <p class="title is-2">
+        Implementando un contenedor de Google Tag Manager en tu sitio web.
+      </p>
+    </div>
+  </section>
+  <div class="container">
+    <div class="content is-dark is-medium">
+      <hr>
+      <article class="message is-dark">
+        <div class="message-header">
+          <p>#ddm #googletagmanager #tagadministrator</p>
+        </div>
+        <div class="message-body">
+          <strong><p>La medición en línea es una herramienta crítica para cualquier negocio que busque expandirse, mantener y mejorar su presencia en línea. Google Tag Manager es una plataforma que permite gestionar múltiples etiquetas y fragmentos de código de medición de una manera fácil y centralizada. En este artículo, explicaremos cómo implementar un contenedor de GTM en un sitio web.</p></strong>
+            <h2 class="subtitle">Paso 1: Crear una cuenta de Google Tag Manager</h2>
+          <p>Lo primero que debes hacer es crear una cuenta de Google Tag Manager. Para hacerlo, inicia sesión en Google Tag Manager (<a href="https://tagmanager.google.com">https://tagmanager.google.com</a>) con tu cuenta de Google. Si no tienes una cuenta, deberás crearla.</p>
+            <h2 class="subtitle">Paso 2: Crear un contenedor de Google Tag Manager</h2>
+          <p>Una vez que hayas iniciado sesión, deberás crear un contenedor de GTM. Un contenedor es simplemente un recipiente para todas las etiquetas y fragmentos de código que usarás para medir tu sitio web.</p>
+          <p>Para crear un contenedor, haz clic en el botón "Crear cuenta" en la página de inicio de Google Tag Manager. Luego, completa la información necesaria, como el nombre de tu empresa y el nombre de tu sitio web.</p>
+            <h2 class="subtitle">Paso 3: Agregar el código de Google Tag Manager al sitio web</h2>
+          <p>Una vez que hayas creado un contenedor de GTM, deberás agregar el código de seguimiento de GTM a tu sitio web. Puedes encontrar el código de seguimiento en la sección "Instalar el código de seguimiento" del contenedor de GTM que acabas de crear.</p>
+          <p>Copia el código de seguimiento y pégalo en cada página de tu sitio web, justo antes del cierre de la etiqueta &lt;/head&gt;. También puedes pegar el código justo después de la apertura del cuerpo &lt;body&gt;, aunque esto puede afectar el rendimiento de tu sitio.</p>
+          <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                  })(window,document,'script','dataLayer','GTM-XXXXXXX');&gt;&lt;/script&gt;
+              &lt;title&gt;Hello World&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+                  height="0" width="0" style="display:none;visibility:hidden">&lt;/iframe&gt;&lt;/noscript&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            <h2 class="subtitle">Paso 4: Configurar las etiquetas de medición en Google Tag Manager</h2>
+          <p>Una vez que hayas agregado el código de seguimiento de GTM a tu sitio web, es hora de configurar las etiquetas de medición. Las etiquetas son fragmentos de código que se ejecutan en tu sitio web y que envían información a las herramientas de medición, como Google Analytics.</p>
+          <p>Para agregar una etiqueta, haz clic en la pestaña "Etiquetas" en el contenedor de GTM y luego haz clic en "Nueva etiqueta". En la página de configuración de la etiqueta, selecciona la herramienta de medición que deseas utilizar (por ejemplo, Google Analytics) y completa la información necesaria para configurar la etiqueta.</p>
+            <h2 class="subtitle">Paso 5: Publicar el contenedor de Google Tag Manager</h2>
+          <p>Una vez que hayas configurado todas las etiquetas de medición en Google Tag Manager, es hora de publicar el contenedor. La publicación del contenedor permite que las etiquetas se ejecuten en tu sitio web y que se envíe información a las herramientas de medición.</p>
+          <p>Para publicar el contenedor, haz clic en el botón "Enviar" en la parte superior de la página de contenedor de GTM. Luego, selecciona "Publicar" en el menú desplegable. Asegúrate de que todas las etiquetas estén configuradas correctamente antes de publicar el contenedor.</p>
+            <h2 class="subtitle">Conclusión</h2>
+          <p>La implementación de un contenedor de Google Tag Manager puede ser una tarea abrumadora al principio, pero es una herramienta poderosa para medir el rendimiento de tu sitio web y mejorar la experiencia del usuario. Con estos cinco pasos, podrás configurar fácilmente un contenedor de GTM y empezar a recopilar datos de medición de manera eficiente.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <section class="hero is-primary">
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Juanalytics</strong> by <a href="#">Juan Purata</a>. Te ayudo con la analítica de tu sitio web
+        escribeme a jpurata85@gmail.com
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

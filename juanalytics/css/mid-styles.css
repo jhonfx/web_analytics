@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img {
+	height: 50px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.articulos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+article {
+	background-color: #f2f2f2;
+	padding: 10px;
+	width: calc(33.33% - 10px);
+	margin-bottom: 20px;
+}
+
+article h2 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.redes-sociales {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 10px;
+}
+
+button a {
+	color: #fff;
+	text-decoration: none;
+}

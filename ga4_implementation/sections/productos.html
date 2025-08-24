@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function() {
+      console.log("cargando");
+      var productList = [];
+      var productsObj = {};
+      var products = [{        
+         "price": 699,
+         "name": "Conair Cepillo de aire ovalado the knot 1 000 watts bc118es",
+         "id": "1500832855",
+         "quantity": 2
+      },{
+         "price": 999,
+         "name": "Conair Combo Unbound Rizadora y Cepillo alaciador inalámbrico",
+         "id": "1500832885",
+         "quantity": 1
+      },{
+         "price": 1899,
+         "name": "Conair Combo Unbound Rizadora Automática",
+         "id": "1500832733",
+         "quantity": 1
+      }];
+      
+      console.log(products.length);
+      for(x=0; x<products.length;x++) {
+        productsObj = {
+          "productsales": products[x].price,
+          "productname": products[x].name,
+          "productid": products[x].id,
+          "productcount": products[x].quantity
+        }
+        console.log(productsObj);
+        productList.push(productsObj);
+      }
+
+      console.log("productList===>", productList.toString());
+
+
+
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

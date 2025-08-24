@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRRGYNCGE9"></script>
+  <script>
+    window.onload = function() {
+      console.log("iniciando")
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+
+
+      dataLayer.push({
+        event: "page_view",
+          promotions: {
+            items: [{
+              name : "proteccion_migrante",
+              position: 1,
+              description: "protegemos a los tuyos"
+            },{
+              name : "proteccion_moto",
+              position: 2,
+              description: "protegemos a los tuyos"
+            },{
+              name : "proteccion_auto",
+              position: 3,
+              description: "protegemos a los tuyos"
+            },{
+              name : "proteccion_hogar",
+              position: 4,
+              description: "protegemos a los tuyos"
+            }]
+          }
+      });
+
+      dataLayer.push({
+        "event": "purchase",
+        "transaction_id": "v39611594ekt-01",
+        "affiliaton": "Ecommerce",
+        "value": 789,
+        "tax": 0,
+        "shipping": 0,
+        "shipping_method": "Envío Domicilio",
+        "payment_type": "Elektra y/o Banco Azteca",
+        "currency": "MXN",
+        "coupon": "",
+        "email": "pruebas@pruebas.com",
+        "ecommerce": {
+            "items": [
+              {
+                  "item_name": "Rotomartillo Taladro Inalambrico Atornillador 20V 300W 69Pz",
+                  "item_id": "1500620379",
+                  "product_id": "1500534284",
+                  "price": 789,
+                  "price_without_discount": 2519,
+                  "item_brand": "GUTSTARK",
+                  "item_category": "Herramientas",
+                  "item_category2": "Eléctricas",
+                  "item_category3": "Rotomartillos, Taladros y Destornilladores",
+                  "item_variant": "Rotomartillo Taladro Inalambrico Atornillador 20v 300w 69pz",
+                  "quantity": 1,
+                  "index": 1,
+                  "currency": "MXN"
+              },
+              {
+                  "item_name": "Taladro Inalambrico Atornillador 20V 300W 69Pz",
+                  "item_id": "1500620380",
+                  "product_id": "1500534285",
+                  "price": 6289,
+                  "price_without_discount": 5200,
+                  "item_brand": "PACOTORRO",
+                  "item_category": "Herramientas",
+                  "item_category2": "Eléctricas",
+                  "item_category3": "Rotomartillos, Taladros y Destornilladores",
+                  "item_variant": "Rotomartillo Taladro Inalambrico Atornillador 20v 300w 69pz",
+                  "quantity": 1,
+                  "index": 1,
+                  "currency": "MXN"
+              },
+              {
+                  "item_name": "Atornillador 80Pz",
+                  "item_id": "1500620381",
+                  "product_id": "1500534286",
+                  "price": 7089,
+                  "price_without_discount": 6800,
+                  "item_brand": "PACOTORRO",
+                  "item_category": "Herramientas",
+                  "item_category2": "Eléctricas",
+                  "item_category3": "Rotomartillos, Taladros y Destornilladores",
+                  "item_variant": "Rotomartillo Taladro Inalambrico Atornillador 20v 300w 69pz",
+                  "quantity": 1,
+                  "index": 1,
+                  "currency": "MXN"
+              }
+            ]}
+        });
+      console.log(dataLayer[5].ecommerce);
+      var vt = dataLayer[5].ecommerce.items;
+      for(v = 0; v < vt.length; v++){
+        console.log(vt[v].item_id);
+      }
+
+      dataLayer.push({
+        'event': "view_cart",
+        'vendor': 'attifunda', // Seller
+        'disponibilidad_de_inventario': boolean,
+        'disponibilidad_de_envio': boolean,
+        'disponibilidad_en_tienda': boolean,
+        'precio_a_credito': boolean,
+        'price_without_discount': '4799.50', // Precio sin descuento
+        'page_type': "pdp",// pdp / clp / plp / etc...
+        'total_price_cart': "$$$$$", //monto total del carrito
+        'total_quantity_cart': 5, //elementos en el carrito
+        'ecommerce': {
+            'items': [{
+            'item_name': 'Xiaomi Redmi Note 12S + Watch',
+            'item_id': '67890', //sku producto
+            'product_id': '1500875462',
+            'item_brand': 'Samsung', // marca
+            'item_category': 'Telefonia', //Recoger la categoría principal del producto
+            'item_category2': 'Celulares', //Recoger la subcategoría del producto
+            'item_category3': 'Telefonia Libre', //Recoger la subcategoría del producto
+            'quantity': 1, // Cantidad de unidades del producto
+            'price': '4299.50', // Precio final
+            'index': 1, // Medir posición en el grid/listado
+            'currency': 'MXN',
+            'item_list_name': 'Telefonía',
+            'item_list_id': 12345 
+            }]
+        }
+      });
+
+  </script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MG3X83S');</script>
+  <!-- End Google Tag Manager -->
+  <title>Document</title>
+</head>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG3X83S"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://assets.adobedtm.com/5bac3522cd83/e052b0b2fee1/launch-ENbb6453df783a434fb7e35f55b4cd2f08.min.js" async></script>
+  <script>
+
+    window.onload = function() {
+      s.events= "event8:"+_satellite.getVar('data.form.random.id');
+      s.pageName= _satellite.getVar('page.info.title');
+      prop2 = _satellite.getVar('page.breadcrumb.dos');
+      prop9 = _satellite.getVisitorId('0A9F3E2C59F26F8B0A495EDA@AdobeOrg').getMarketingCloudVisitorID();
+      prop16 = _satellite.getVar('site.info.name')
+      prop50 = window.location.pathname
+      eVar1 = "TE:Clic|ET:Boton|RE:Registro|SE:Registro|CT:Registrate-P2|PA:Banco Azteca TPremia"
+      eVar4 = _satellite.getVar('data.form.random.id');
+      s.t();
+
+
+      dataLayer.push({
+  'event': ‘view_item’,
+  'page_type': ‘pdp’,
+  'ecommerce': {
+     'items': [{
+      'item_name': 'Hunk 160R Gris',     // Name or ID is required
+      'item_id': '67890',     //ID  que identifica al producto(sku)
+      'product_id': 1500875462,
+      'price': '45999.50',     // Precio final
+      'price_without_discount': '4799.50',    // Precio sin descuento
+      'item_brand': 'HERO',     //Marca del Producto
+      'item_category': 'Urbana',     //Recoger la categoría principal del producto
+      'item_category2': '',     //Recoger la subcategoría del producto
+      'item_category3': '',     //Recoger la subcategoría del producto
+      'item_variant': '',     //Recoger variante del producto
+      'quantity': 1,     // Cantidad de unidades agregadas al carrito
+      'index': 1,     // Medir posición en el grid/listado
+      'currency':'MXN',     // Recoger la moneda
+    }]
+  }
+});
+    }
+  </script>
+</head>
+<body>
+  <script>
+    dataLayer.push({
+        'event': ‘click_element’,
+        'site': {
+          'item_name': '{{ identificador del elemento seleccionado }}',
+          *id del elemento
+		*atributo alt
+		*descripción general
+	'element_type': '{{ tipo de elemento }}',
+          * imagen
+		* hipervinculo
+		* button
+		* icon
+      'index': 1,     // si cada elemento tiene un index, agregarlo
+        }
+    'customerInfo': {
+          'session_id': '49a6b6d6-b22b-4727-a00f-d9680da65f58', //nombre del banner
+          'adobe_id': "49800781387665719021377896585659542093",     //de la creatividad si es que se cuenta con el
+        }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 13px;
+  font-family: Arial, sans-serif;
+  background-color: #fce4ec; /* Fondo rosa pastel */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff69b4; /* Fondo rosa pastel */
+}
+
+header img {
+  width: 100%; /* Ajusta el tamaño del GIF del encabezado según sea necesario */
+}
+
+.nabla {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+
+.cairo-play {
+  font-family: "Cairo Play", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+  color: #ff69b4; /* Letras rosa pastel */
+}
+
+.animated-text {
+  font-size: 3em;
+  color: #ff1493; /* Letras rosa oscuro */
+  animation: bounce 2s infinite alternate; /* Animación de rebote */
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+p {
+  font-family: "Cairo Play", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #934646; /* Letras rosa claro */
+}
