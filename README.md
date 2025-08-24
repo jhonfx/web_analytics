@@ -2,11 +2,11 @@
 
 
 Web analytics projects, for testing scripts
-*Google Analytics
-*Adobe analytics
-*META
-*Google Ads
-*Tiktok
+ + Google Analytics
+ + Adobe analytics
+ + META
+ + Google Ads
+ + Tiktok
 
  - Testing server side implementations
  - Datalayer model objects
